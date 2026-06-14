@@ -86,27 +86,3 @@ For each row in the input Excel files, the pipeline:
 11. Saves one JSON output per processed row.
 12. Saves a manifest file summarizing the batch run.
 
-### Expected project structure
-
-The script assumes the following project structure:
-
-
-```text
-project-root/
-├── .env
-├── scripts/
-│   └── your_script.py
-├── data/
-│   ├── patient_notes/
-│   │   └── input_file.xlsx
-│   ├── batch_outputs/
-│   ├── vector_search/
-│   │   ├── relationship_index.json
-│   │   ├── diagnosis_index.json
-│   │   ├── relationship_lexical.json
-│   │   ├── diagnosis_lexical.json
-│   │   ├── relationship_embeddings.npy
-│   │   └── diagnosis_embeddings.npy
-│   └── judge_debug/
-└── judge_utils.py
-```
